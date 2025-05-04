@@ -1,7 +1,7 @@
 # This Python file uses the following encoding: utf-8
 import sys
 from pathlib import Path
-
+import src.rc_res as rc_res
 from PySide6.QtGui import QGuiApplication
 from PySide6.QtQml import QQmlApplicationEngine
 
