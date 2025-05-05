@@ -16,6 +16,8 @@ Window {
     minimumWidth: 1140
     minimumHeight: 580
 
+
+
     FontLoader {
         id: productsans
         source: "qrc:/res/fonts/ProductSansRegular.ttf"
@@ -37,7 +39,7 @@ Window {
         title: "Confirmation"
         standardButtons: Dialog.Yes | Dialog.No
 
-        onAccepted: console.log("Yes clicked")
+        onAccepted: console.log(controller.change_green())
         onRejected: console.log("No clicked")
     }
 
@@ -124,7 +126,7 @@ Window {
                     anchors.fill: parent
                     cursorShape: Qt.PointingHandCursor
                     onClicked: {
-                        dialog.open()
+                        controller.stop()
                     }
                 }
             }
